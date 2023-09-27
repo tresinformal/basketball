@@ -37,13 +37,7 @@ macx {
   QMAKE_OSX_DEPLOYMENT_TARGET = 10.15
   INCLUDEPATH += /Users/oscargullberg/SFML/Library/Frameworks/include
   LIBS += -L/Users/oscargullberg/SFML/lib
-      -lsfml-system \
-      -lsfml-window \
-      -lsfml-graphics \
-      -lsfml-audio \
-      -lsfml-network \
-      -framework SFML \
-      -F/Library/Frameworks
+
 }
 
 win32{
