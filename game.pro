@@ -35,7 +35,7 @@ unix:!macx {
 
 macx {
   QMAKE_OSX_DEPLOYMENT_TARGET = 10.15
-  INCLUDEPATH += /Users/oscargullberg/SFML/Library/Frameworks/include
+  INCLUDEPATH += /Users/oscargullberg/SFML/include
   LIBS += -L/Users/oscargullberg/SFML/lib
 
 }
