@@ -13,26 +13,7 @@ Tresinformal's 2023 team basketball game
 > The game designers decide what is in the game design document.
 > (see Issues what are the criteria for a good Issue)
 
-The game must display a window [#1].
-
-Issue 1:
-
-Base structure for a basketball game (two players
-
-test: 
-// get two players
-
-
-Issue 2: 
-// get score system
-// Players score 3 points for any basket made beyond the 3 point line, in bounds.
-// Players score 2 points for any basket made inside the 3 point line, in bounds.
-
-Issue 3: 
-
-The game should have settings 
-
-// buttons for different settings
+The game has two players [#13].
 
 ## Issues
 
