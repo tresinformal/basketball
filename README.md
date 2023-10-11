@@ -17,11 +17,8 @@ The game has two players [#13].
 
 ## Issues
 
-![](design_document_and_issues.png)
-
 > Issues are the technical translation of the game design document.
 > Ideally each sentence in the design document results in one Issue.
-
 
 There are two types of Issues:
 
@@ -35,7 +32,5 @@ We use the Model-View-Controller Design Pattern to separate the game logic,
 from the game visualization and input:
 
 ![](mvc.png)
-
-
 
 # This is another text 
