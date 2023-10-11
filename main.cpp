@@ -1,4 +1,4 @@
-//#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 
 #include <cassert>
 #include <chrono>
@@ -6,9 +6,14 @@
 #include <vector>
 #include <string>
 
+#include "game.h"
+#include "player.h"
+
 void test()
 {
     // TODO: populate with test functions
+    test_game();
+    test_player();
 }
 
 int main(int argc, char **argv)
