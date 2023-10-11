@@ -33,4 +33,4 @@ from the game visualization and input:
 
 ![](mvc.png)
 
-# This is another text 
+
