@@ -8,4 +8,6 @@ public:
     game();
 };
 
+void test_game();
+
 #endif // GAME_H
