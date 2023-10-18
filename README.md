@@ -14,7 +14,7 @@ Tresinformal's 2023 team basketball game
 > (see Issues what are the criteria for a good Issue)
 
 The game has two players [#13].
-The game has one basketball.
+The game has one basketball [#14].
 All objects follow the laws of gravity (Newton's Second Law).
 
 ## Issues
