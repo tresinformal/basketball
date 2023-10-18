@@ -1,8 +1,10 @@
 #include "game.h"
 
+#include <cassert>
+
 game::game()
 {
-
+    players.resize(2);
 }
 
 int game::get_player_nb() {

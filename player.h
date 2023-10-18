@@ -8,4 +8,6 @@ public:
     player();
 };
 
+void test_player();
+
 #endif // PLAYER_H

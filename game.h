@@ -9,8 +9,15 @@ class game
 {
 public:
     game();
-    std::vector<player> players(2);
     int get_player_nb();
+
+private:
+    std::vector<player> players;
 };
+
+
+
+
+void test_game();
 
 #endif // GAME_H
