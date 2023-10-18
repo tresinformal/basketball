@@ -15,9 +15,6 @@ private:
     std::vector<player> players;
 };
 
-
-
-
 void test_game();
 
 #endif // GAME_H
