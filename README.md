@@ -13,34 +13,14 @@ Tresinformal's 2023 team basketball game
 > The game designers decide what is in the game design document.
 > (see Issues what are the criteria for a good Issue)
 
-The game must display a window [#1].
-
-Issue 1:
-
-Base structure for a basketball game (two players
-
-test: 
-// get two players
-
-
-Issue 2: 
-// get score system
-// Players score 3 points for any basket made beyond the 3 point line, in bounds.
-// Players score 2 points for any basket made inside the 3 point line, in bounds.
-
-Issue 3: 
-
-The game should have settings 
-
-// buttons for different settings
+The game has two players [#13].
+The game has one basketball.
+All objects follow the laws of gravity (Newton's Second Law).
 
 ## Issues
 
-![](design_document_and_issues.png)
-
 > Issues are the technical translation of the game design document.
 > Ideally each sentence in the design document results in one Issue.
-
 
 There are two types of Issues:
 
@@ -54,3 +34,5 @@ We use the Model-View-Controller Design Pattern to separate the game logic,
 from the game visualization and input:
 
 ![](mvc.png)
+
+
