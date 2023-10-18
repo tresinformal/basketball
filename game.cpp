@@ -4,19 +4,26 @@
 
 game::game()
 {
-    players.resize(2);
+  players.resize(2);
 }
 
 int game::get_player_nb() {
-    return players.size();
+  return players.size();
 }
 
 void test_game()
 {
-    // Here write tests for the game logic
-    {
-        // 11 - The game contains two players
-        game g;
-        assert(g.get_player_nb() == 2);
-    }
+  // Here write tests for the game logic
+  {
+    // 11 - The game contains two players
+    game g;
+    assert(g.get_player_nb() == 2);
+  }
+  //#define FIX_ISSUE_14
+  #ifdef FIX_ISSUE_14
+  {
+    const game g;
+    g.get_ball();
+  }
+  #endif // FIX_ISSUE_14
 }
