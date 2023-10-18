@@ -20,6 +20,8 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 > (see Issues what are the criteria for a good Issue)
 
 The game has two players [#13].
+The game has one basketball.
+All objects follow the laws of gravity (Newton's Second Law).
 
 ## Issues
 
@@ -38,6 +40,4 @@ We use the Model-View-Controller Design Pattern to separate the game logic,
 from the game visualization and input:
 
 ![](mvc.png)
-
-# This is another text 
 
