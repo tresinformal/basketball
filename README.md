@@ -20,8 +20,8 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 > (see Issues what are the criteria for a good Issue)
 
 The game has two players [#13].
-The game has one basketball.
-All objects follow the laws of gravity (Newton's Second Law).
+The game has one basketball [#14].
+All objects follow the laws of gravity (Newton's Second Law) [#15].
 
 ## Issues
 
