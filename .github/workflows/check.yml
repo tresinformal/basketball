@@ -18,6 +18,9 @@ jobs:
       - name: Install SFML
         run: sudo apt install libsfml-dev
 
+      - name: Install Codecov
+        run: sudo pip install codecov
+
       - name: qmake
         run: qmake game.pro
 
