@@ -23,8 +23,7 @@ The game has two players [#13].
 The game finishes when on player reaches 20 points.
 The game has one basketball [#14].
 All objects follow the laws of gravity (Newton's Second Law) [#15].
-
-
+ There is an option to play on one side or two sides.
 ## Issues
 
 > Issues are the technical translation of the game design document.
