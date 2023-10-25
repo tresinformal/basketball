@@ -9,7 +9,7 @@ class game
 {
 public:
     game();
-    int get_player_nb();
+    int get_n_players();
 
 private:
     std::vector<player> players;

@@ -7,7 +7,7 @@ game::game()
   players.resize(2);
 }
 
-int game::get_player_nb() {
+int game::get_n_players() {
   return players.size();
 }
 
@@ -17,7 +17,7 @@ void test_game()
   {
     // 11 - The game contains two players
     game g;
-    assert(g.get_player_nb() == 2);
+    assert(g.get_n_players() == 2);
   }
   //#define FIX_ISSUE_14
   #ifdef FIX_ISSUE_14
