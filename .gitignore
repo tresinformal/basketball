@@ -39,3 +39,5 @@ Makefile.Debug
 Makefile.Release
 debug/
 game
+*.gcda
+*.gcno
