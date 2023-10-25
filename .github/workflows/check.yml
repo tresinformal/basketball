@@ -27,15 +27,6 @@ jobs:
       - name: run
         run: ./game
 
-      - name: clean for release build
-        run: make clean
-
-      - name: qmake
-        run: qmake game.pro
-
-      - name: make
-        run: make release --silent
-
       - name: Measure codecov 1
         run: ./get_code_cov.sh
 
@@ -49,6 +40,15 @@ jobs:
         uses: codecov/codecov-action@v3
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: clean for release build
+        run: make clean
+
+      - name: qmake
+        run: qmake game.pro
+
+      - name: make
+        run: make release --silent
 
       - name: Show contributors on all branches
         run: git clone https://github.com/tresinformal/basketball.git ; cd basketball ; git shortlog -s -n --all --no-merges
