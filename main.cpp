@@ -20,7 +20,6 @@ int main(int argc, char **argv)
 {
     // Do something with args to not get a warning
     const std::vector<std::string> args(argv, argv + argc);
-
 #ifndef NDEBUG
     assert(0.1 > 0.0); //!OCLINT indeed a constant conditional
     test();

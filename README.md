@@ -19,12 +19,14 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 > The game designers decide what is in the game design document.
 > (see Issues what are the criteria for a good Issue)
 
-The game has two players [#13].
+[The game finishes when on player reaches 20 points](https://github.com/tresinformal/basketball/issues/23).
+[The game has two players](https://github.com/tresinformal/basketball/issues/11).
+[The game has one basketball](https://github.com/tresinformal/basketball/issues/14).
 
-The game finishes when on player reaches 20 points.
-The game has one basketball [#14].
-All objects follow the laws of gravity (Newton's Second Law) [#15].
+All objects follow the laws of gravity (Newton's Second Law):
 
+ * the [basketball](https://github.com/tresinformal/basketball/issues/15)
+ * [others]
 
 ## Issues
 
