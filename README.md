@@ -14,7 +14,7 @@ Tresinformal's 2023 team basketball game
 > (see Issues what are the criteria for a good Issue)
 
 The game has two players [#13].
-
+The game finishes when on player reaches 20 points. 
 ## Issues
 
 ![](design_document_and_issues.png)
@@ -38,4 +38,4 @@ from the game visualization and input:
 
 
 
-# This is another text 
+read it 
