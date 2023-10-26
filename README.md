@@ -45,3 +45,7 @@ from the game visualization and input:
 
 ![](mvc.png)
 
+Here is to show how to merge text from richel to
+develop without a code review
+
+
