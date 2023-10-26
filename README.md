@@ -37,7 +37,6 @@ All objects follow the laws of gravity (Newton's Second Law):
  * the [basketball](https://github.com/tresinformal/basketball/issues/15)
  * [others]
 
- 90794d8c3c51388341a1e3b06ef34b87d9d61a75
 ## Issues
 
 > Issues are the technical translation of the game design document.
