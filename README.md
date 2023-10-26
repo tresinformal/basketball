@@ -61,7 +61,9 @@ from the game visualization and input:
   5. [Merge topic branch to develop yourself](https://youtu.be/1fKdU1m3Uug?si=qox0K-EdZ-tDpcRY)
   6. [Merge topic branch to develop with a code review](https://youtu.be/VexyXysb-BM?si=uCOuqCVuZ_ylsUtI)
 
+## Project workflows
 
-
+ * [From design to feature](https://youtu.be/f-rzfZtsPKU)
+ * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
 
 
