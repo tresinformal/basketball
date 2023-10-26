@@ -55,3 +55,5 @@ We use the Model-View-Controller Design Pattern to separate the game logic,
 from the game visualization and input:
 
 ![](mvc.png)
+
+Added this line for demo purposes.
