@@ -27,6 +27,14 @@ void test_game()
   }
   #endif // FIX_ISSUE_14
 
+  //#define FIX_ISSUE_26
+  #ifdef FIX_ISSUE_26
+  {
+    const game g;
+    get_screen_size(g);
+  }
+  #endif // FIX_ISSUE_26
+
   //#define FIX_ISSUE_25
   #ifdef FIX_ISSUE_25
   {
