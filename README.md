@@ -62,6 +62,11 @@ Our `git` branching model:
  * `develop`: merging topic branches
  * topic branches: where work is done
 
+Videos:
+
+ * [Overview of the git branches](https://youtu.be/trLafZpD1Tg?si=ZliLdIQ8KXDW7xjq)
+ * [Working with this git branching model](https://youtu.be/pM520_JLR6w?si=1pvh5uUjXFJPPqGZ)
+
 ## GitHub workflows
 
   1. [Modify README on main branch using GitHub web interface](https://youtu.be/xBH2xZoKof4?si=ohdG6-y8lzarSqIa)
