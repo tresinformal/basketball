@@ -52,6 +52,16 @@ from the game visualization and input:
 
 ![](mvc.png)
 
+## git branching model
+
+![](git_branches.png)
+
+Our `git` branching model:
+
+ * `master`/`main`: a working version
+ * `develop`: merging topic branches
+ * topic branches: where work is done
+
 ## GitHub workflows
 
   1. [Modify README on main branch using GitHub web interface](https://youtu.be/xBH2xZoKof4?si=ohdG6-y8lzarSqIa)
