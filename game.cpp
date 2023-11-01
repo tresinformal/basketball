@@ -1,14 +1,22 @@
 #include "game.h"
 
 #include <cassert>
+#include <iostream>
 
 game::game()
 {
   players.resize(2);
 }
 
-int game::get_n_players() {
+int game::get_n_players()
+{
   return players.size();
+}
+
+void game::get_ball()
+{
+  object ball("ball");
+  std::cout << ball.name << "\n";
 }
 
 void test_game()
@@ -19,10 +27,11 @@ void test_game()
     game g;
     assert(g.get_n_players() == 2);
   }
-  //#define FIX_ISSUE_14
+  #define FIX_ISSUE_14
   #ifdef FIX_ISSUE_14
   {
-    const game g;
+    // TODO: const or no const
+    game g;
     g.get_ball();
   }
   #endif // FIX_ISSUE_14

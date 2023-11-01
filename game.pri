@@ -7,6 +7,7 @@
 SOURCES += \
 	$$PWD/game.cpp \
 	$$PWD/main.cpp \
+	$$PWD/object.cpp \
 	$$PWD/player.cpp
 
 # RESOURCES += \
@@ -15,4 +16,5 @@ SOURCES += \
 
 HEADERS += \
     $$PWD/game.h \
+    $$PWD/object.h \
     $$PWD/player.h
