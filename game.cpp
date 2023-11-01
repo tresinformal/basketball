@@ -15,8 +15,8 @@ int game::get_n_players()
 
 void game::get_ball()
 {
-  object ball("ball");
-  std::cout << ball.name << "\n";
+  // object ball("ball");
+  std::cout << "test\n";
 }
 
 void test_game()
@@ -31,7 +31,7 @@ void test_game()
   #ifdef FIX_ISSUE_14
   {
     // TODO: const or no const
-    game g;
+    const game g;
     g.get_ball();
   }
   #endif // FIX_ISSUE_14

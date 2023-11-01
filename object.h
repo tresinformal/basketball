@@ -5,8 +5,8 @@
 class object
 {
 public:
-    string name;
-    object(string cName);
+    //string name;
+    object();
 };
 
 #endif // OBJECT_H

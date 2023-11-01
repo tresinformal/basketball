@@ -1,6 +1,6 @@
 #include "object.h"
 
-object::object(String cName)
+object::object()
 {
-    name = cName;
+    //name = cName;
 }
