@@ -10,4 +10,7 @@ public:
     int get_x();
 };
 
+/// Tests the `ball` class
+void test_ball();
+
 #endif // BALL_H
