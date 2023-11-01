@@ -22,6 +22,7 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 [The game finishes when one player reaches 20 points](https://github.com/tresinformal/basketball/issues/23).
 [The game has two players](https://github.com/tresinformal/basketball/issues/11).
 [The game has one basketball](https://github.com/tresinformal/basketball/issues/14).
+A basketball's center has a coordinate with an x and a y.
 [The (one) ball starts at the top-center of the screen](https://github.com/tresinformal/basketball/issues/25).
 
 All objects follow the laws of gravity (Newton's Second Law):
