@@ -6,8 +6,10 @@ class ball
 {
 public:
     ball();
-    int get_y();
-    int get_x();
+    double get_x();
+    double get_y();
+    void set_x(double x);
+    void set_y(double y);
 };
 
 /// Tests the `ball` class

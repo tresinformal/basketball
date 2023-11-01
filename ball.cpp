@@ -7,12 +7,20 @@ ball::ball()
 
 }
 
-int ball::get_y() {
-    return 0;
+void ball::set_x(double) {
+    return;
 }
 
-int ball::get_x() {
-    return 0;
+void ball::set_y(double) {
+    return;
+}
+
+double ball::get_x() {
+    return 3.14;
+}
+
+double ball::get_y() {
+    return 2.71;
 }
 
 void test_ball()
@@ -22,9 +30,9 @@ void test_ball()
     ball b;
     const double x{3.14};
     b.set_x(x);
-    assert(b.get_x() == x)
+    assert(b.get_x() == x);
     const double y{2.71};
     b.set_y(y);
-    assert(b.get_y() == y)
+    assert(b.get_y() == y);
   }
 }
