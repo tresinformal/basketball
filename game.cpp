@@ -29,6 +29,12 @@ void test_game()
     const game g;
     g.get_ball();
   }
+  // #30
+  {
+    const game g;
+    g.get_ball().get_x();
+    g.get_ball().get_y();
+  }
 
   //#define FIX_ISSUE_26
   #ifdef FIX_ISSUE_26
