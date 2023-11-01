@@ -24,14 +24,11 @@ void test_game()
     game g;
     assert(g.get_n_players() == 2);
   }
-  #define FIX_ISSUE_14
-  #ifdef FIX_ISSUE_14
+  // #14
   {
-    // TODO: const or no const
     const game g;
     g.get_ball();
   }
-  #endif // FIX_ISSUE_14
 
   //#define FIX_ISSUE_26
   #ifdef FIX_ISSUE_26
