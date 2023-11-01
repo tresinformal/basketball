@@ -4,14 +4,13 @@
 #include <vector>
 
 #include "player.h"
-#include "objbase.h"
 
 class game
 {
 public:
     game();
     int get_n_players();
-    void get_ball();
+    void get_ball() const;
 
 private:
     std::vector<player> players;

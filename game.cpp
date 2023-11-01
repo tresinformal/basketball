@@ -1,7 +1,6 @@
 #include "game.h"
 
 #include <cassert>
-#include <iostream>
 
 game::game()
 {
@@ -13,10 +12,8 @@ int game::get_n_players()
   return players.size();
 }
 
-void game::get_ball()
+void game::get_ball() const
 {
-  // object ball("ball");
-  std::cout << "test\n";
 }
 
 void test_game()
