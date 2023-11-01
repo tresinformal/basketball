@@ -12,8 +12,10 @@ int game::get_n_players()
   return players.size();
 }
 
-void game::get_ball() const
+ball game::get_ball() const
 {
+  ball b;
+  return b;
 }
 
 void test_game()
@@ -28,6 +30,12 @@ void test_game()
   {
     const game g;
     g.get_ball();
+  }
+  // #30
+  {
+    const game g;
+    g.get_ball().get_x();
+    g.get_ball().get_y();
   }
 
   //#define FIX_ISSUE_26
