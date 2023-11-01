@@ -10,6 +10,7 @@ class game
 public:
     game();
     int get_n_players();
+    void get_ball() const;
 
 private:
     std::vector<player> players;
