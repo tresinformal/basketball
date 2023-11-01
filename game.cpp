@@ -12,8 +12,10 @@ int game::get_n_players()
   return players.size();
 }
 
-void game::get_ball() const
+ball game::get_ball() const
 {
+  ball b;
+  return b;
 }
 
 void test_game()
