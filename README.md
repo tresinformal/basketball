@@ -6,7 +6,6 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 ------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------
 `master`    |[![check](https://github.com/tresinformal/basketball/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/tresinformal/basketball/actions/workflows/check.yml)   |[![codecov.io](https://codecov.io/github/tresinformal/basketball/coverage.svg?branch=master)](https://codecov.io/github/tresinformal/basketball/branch/master)
 `develop`   |[![check](https://github.com/tresinformal/basketball/actions/workflows/check.yml/badge.svg?branch=develop)](https://github.com/tresinformal/basketball/actions/workflows/check.yml)  |[![codecov.io](https://codecov.io/github/tresinformal/basketball/coverage.svg?branch=develop)](https://codecov.io/github/tresinformal/basketball/branch/develop)
-`mart`   |[![check](https://github.com/tresinformal/basketball/actions/workflows/check.yml/badge.svg?branch=mart)](https://github.com/tresinformal/basketball/actions/workflows/check.yml)  |[![codecov.io](https://codecov.io/github/tresinformal/basketball/coverage.svg?branch=mart)](https://codecov.io/github/tresinformal/basketball/branch/develop)
 
 ## Game design document
 
@@ -31,9 +30,6 @@ All objects follow the laws of gravity (Newton's Second Law):
  * [others]
 
 There is an option to play on one side or two sides.
-
-
-
 
 ## Issues
 
@@ -61,7 +57,9 @@ Our `git` branching model:
 
  * `master`/`main`: a working version
  * `develop`: merging topic branches
- * topic branches: where work is done
+ * topic branches: where work is done,
+   for example, Issue `x` is done on 
+   a branch called `issue_x`
 
 Videos:
 
