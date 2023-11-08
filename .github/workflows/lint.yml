@@ -19,8 +19,9 @@ jobs:
         with:
           style: llvm
           files-changed-only: false
-          error: true
 
       - name: Fail fast
         if: steps.linter.outputs.checks-failed != 0
-        run: exit 1
+        run: |
+          echo "Too bad, style failed. Look at the output of the previous line :-)"
+          exit 1
