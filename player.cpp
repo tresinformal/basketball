@@ -25,10 +25,10 @@ void test_player() {
         // by 3 points if outside the line
 
         player p;
-        const int line_x_position = 30; // arbitrary value
+        const double line_x_position = 30.0; // arbitrary value
 
         // the player is inside the line
-        p.set_position(line_x_position - 30); // inside is below the line's x, arbitrary
+        p.set_position(line_x_position - 1.0); // inside is below the line's x, arbitrary
 
         // it scores
         p.score(line_x_position);
@@ -39,7 +39,7 @@ void test_player() {
         // now its score should be 4
         assert(p.get_score() == 4);
         // the player is now outside the line
-        p.set_position(line_x_position + 30);
+        p.set_position(line_x_position + 1.0);
 
         // it scores
         p.score(line_x_position);
