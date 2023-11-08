@@ -19,7 +19,7 @@ jobs:
         with:
           style: llvm
           files-changed-only: false
-          extra-args: --Werror
+          error: true
 
       - name: Fail fast
         if: steps.linter.outputs.checks-failed != 0
