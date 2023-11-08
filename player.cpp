@@ -19,8 +19,13 @@ void test_player() {
 
     // 39 - A player that scores increase its score count
     player p;
-    bool is_player_inside_line;
     // if player inside line
+    if (p == is_player_inside_line) {
+        p.score += 2;
+    }
+    else {
+        p.score += 3;
+    }
     // should score 2 points
     // if outside line
     // should score 3 points
