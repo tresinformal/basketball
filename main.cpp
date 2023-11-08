@@ -6,12 +6,14 @@
 #include <vector>
 #include <string>
 
+#include "ball.h"
 #include "game.h"
 #include "player.h"
 
 void test()
 {
     // TODO: populate with test functions
+    test_ball();
     test_game();
     test_player();
 }
@@ -29,5 +31,5 @@ int main(int argc, char **argv)
 #endif
 
     std::cout << "Hello Basketballers!\n";
-	return 0; // Game completed succesfully
+        return 0; // Game completed succesfully
 }
