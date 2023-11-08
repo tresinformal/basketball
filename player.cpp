@@ -1,7 +1,11 @@
 #include "player.h"
 #include <cassert>
-player::player() {
+player::player(): m_score{0} {
 
+}
+
+int player::get_score() const {
+    return m_score;
 }
 
 void test_player() {
