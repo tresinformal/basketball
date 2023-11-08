@@ -13,11 +13,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: cpp-linter/cpp-linter-action@main
         id: linter
-        continue-on-error: true
+        continue-on-error: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          style: file
+          style: llvm
           files-changed-only: false
 
       - name: Fail fast?!
