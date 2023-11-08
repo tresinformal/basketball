@@ -17,5 +17,12 @@ void test_player() {
     //check player score
     assert(expected_player_score == player_score);
 
-
+    // 39 - A player that scores increase its score count
+    player p;
+    bool is_player_inside_line;
+    // if player inside line
+    // should score 2 points
+    // if outside line
+    // should score 3 points
+    p.score();
 }

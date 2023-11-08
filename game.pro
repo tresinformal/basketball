@@ -23,9 +23,6 @@ CONFIG(release, debug|release) {
 CONFIG(debug, debug|release) {
     # A warning is an error, only in debug mode
     QMAKE_CXXFLAGS += -Werror
-
-
-    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
 }
 
 # Qt5
@@ -34,7 +31,7 @@ QT += core gui
 # GNU/Linux
 unix:!macx {
     # gcov
-
+    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
     LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
