@@ -5,8 +5,8 @@
 
 #include "player.h"
 
-class game
-{
+class game {
+
 public:
     game();
     int get_n_players();
