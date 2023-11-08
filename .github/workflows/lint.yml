@@ -7,7 +7,7 @@ on:
   - cron: "0 0 2 * *"
 
 jobs:
-  cpp-linter:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,10 +20,6 @@ jobs:
           style: llvm
           files-changed-only: false
 
-      - name: Fail fast?!
+      - name: Fail fast
         if: steps.linter.outputs.checks-failed != 0
-        run: |
-          echo "some linter checks failed. ${{ steps.linter.outputs.checks-failed }}"
-        # for actual deployment
-        # run: exit 1
-
+        run: exit 1
