@@ -36,12 +36,6 @@ Things you may wonder:
    your absence: we trust you do something useful/fun :-)
  * There is no 'homework': we work only when we can and want to
 
-## Who is in the team?
-
-Active team members have their own git branch (whatever a git branch is :-) ),
-so [https://github.com/tresinformal/drakkar#drakkar](https://github.com/tresinformal/drakkar#drakkar)
-gives a nice overview of all team members.
-
 ## Do I need to know C++ before joining?
 
 Nope, the team will teach you.
@@ -62,7 +56,7 @@ Nope, there is no 'homework': we work only when we can and want to.
 
  * Send Richel (or any team member) a Discord Friend Request: `richelbilderbeek#9002`
  * Send Richel (or any team member) an email: `richel@richelbilderbeek.nl`
- * Post at the GitHub Issue [Become a tresinformal team member](https://github.com/tresinformal/drakkar/issues/1)
+ * Create [a GitHub Issue](https://github.com/tresinformal/basketball/issues) and request to become a team member
 
 ## How is Discord used?
 
