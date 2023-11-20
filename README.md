@@ -7,6 +7,12 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 `master`    |[![check](https://github.com/tresinformal/basketball/actions/workflows/check.yml/badge.svg?branch=main)](https://github.com/tresinformal/basketball/actions/workflows/check.yml)   |[![codecov.io](https://codecov.io/github/tresinformal/basketball/coverage.svg?branch=master)](https://codecov.io/github/tresinformal/basketball/branch/master)
 `develop`   |[![check](https://github.com/tresinformal/basketball/actions/workflows/check.yml/badge.svg?branch=develop)](https://github.com/tresinformal/basketball/actions/workflows/check.yml)  |[![codecov.io](https://codecov.io/github/tresinformal/basketball/coverage.svg?branch=develop)](https://codecov.io/github/tresinformal/basketball/branch/develop)
 
+## Meetings
+
+ * Date: Weekly, every Wednesday
+ * Time: 17:00-19:00 Amsterdam/Stockholm time
+ * On Discord, see [FAQ](faq.md)
+
 ## Game design document
 
 ![](design_document_and_issues.png)
