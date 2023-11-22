@@ -4,12 +4,15 @@ player::player(): m_score{0} {
 
 }
 
-int player::get_score() const {
+int player::get_score() const noexcept {
     return m_score;
 }
+
 void player::set_score(const int new_score) {
+    assert(new_score >= 0);
     m_score = new_score;
 }
+
 void test_player()
 {
     {

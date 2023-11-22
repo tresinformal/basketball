@@ -18,12 +18,10 @@ ball game::get_ball() const
   return b;
 }
 bool has_winner(const game& g) {
-    if (g.get_players()[0].get_score() >= 20)
-        return true;
-    if (g.get_players()[1].get_score() >= 20)
-        return true;
-    return false;
-
+    return
+        g.get_players()[0].get_score() >= 20
+     || g.get_players()[1].get_score() >= 20
+    ;
 }
 int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
