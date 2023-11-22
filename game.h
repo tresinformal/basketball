@@ -6,8 +6,8 @@
 #include "player.h"
 #include "ball.h"
 
-class game
-{
+class game {
+
 public:
     game();
     int get_n_players();

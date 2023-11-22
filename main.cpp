@@ -10,16 +10,14 @@
 #include "game.h"
 #include "player.h"
 
-void test()
-{
+void test() {
     // TODO: populate with test functions
     test_ball();
     test_game();
     test_player();
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
     // Do something with args to not get a warning
     const std::vector<std::string> args(argv, argv + argc);
 #ifndef NDEBUG
