@@ -7,7 +7,9 @@ player::player(): m_score{0} {
 int player::get_score() const {
     return m_score;
 }
-
+void player::set_score(const int new_score) {
+    m_score = new_score;
+}
 void test_player()
 {
     {

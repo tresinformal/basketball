@@ -25,6 +25,10 @@ bool has_winner(const game& g) {
     return false;
 
 }
+int get_player_score(const game& g, const int player_index) {
+    return g.get_players().at(player_index).get_score();
+}
+
 
 void set_player_score(
     game& g,
