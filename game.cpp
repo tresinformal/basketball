@@ -72,7 +72,8 @@ void test_game()
     const int score{20};
     // Equivalent to g.get_player(player_index).set_score(score);
     set_player_score(g, player_index, score);
+    get_player_score(g, player_index);
     assert(get_player_score(g, player_index) == score); // Check ourselves
-    assert(g.has_winner());
+    assert(has_winner(g));
   }
 }

@@ -13,9 +13,15 @@ public:
     int get_n_players();
     ball get_ball() const;
 
+
 private:
     std::vector<player> players;
 };
+void set_player_score(game g, int player_index, int score);
+
+int get_player_score(game g, int player_index);
+
+bool has_winner(game g);
 
 void test_game();
 
