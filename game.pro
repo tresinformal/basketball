@@ -25,7 +25,7 @@ CONFIG(debug, debug|release) {
     QMAKE_CXXFLAGS += -Werror
 
 
-    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+
 }
 
 # Qt5
@@ -34,7 +34,7 @@ QT += core gui
 # GNU/Linux
 unix:!macx {
     # gcov
-
+    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
     LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
