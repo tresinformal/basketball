@@ -17,6 +17,7 @@ ball game::get_ball() const
   ball b;
   return b;
 }
+
 bool has_winner(const game& g) {
     return
         g.get_players()[0].get_score() >= 20
