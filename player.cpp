@@ -20,6 +20,7 @@ void test_player() {
     const int player_score{player_g.get_score()};
     //check player score
     assert(expected_player_score == player_score);
+    // 41 A player has a position in continuous space
     const double x{player_g.get_x()};
     const double y{player_g.get_y()};
     assert(x == 0.0);
