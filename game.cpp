@@ -65,4 +65,14 @@ void test_game()
     assert(is_more_or_less_equal(ball_center_y, 0.0));
   }
   #endif // FIX_ISSUE_25
+  // #23: The game finishes when a player reaches 20 points
+  {
+    game g;
+    const int player_index{0};
+    const int score{20};
+    // Equivalent to g.get_player(player_index).set_score(score);
+    set_player_score(g, player_index, score);
+    assert(get_player_score(g, player_index) == score); // Check ourselves
+    assert(g.has_winner());
+  }
 }
