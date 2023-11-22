@@ -25,6 +25,15 @@ bool has_winner(const game& g) {
     return false;
 
 }
+
+void set_player_score(
+    game& g,
+    const int player_index,
+    const int score
+) {
+  g.get_players().at(player_index).set_score(score);
+}
+
 void test_game()
 {
   // Here write tests for the game logic
