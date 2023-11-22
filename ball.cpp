@@ -7,20 +7,20 @@ ball::ball()
 
 }
 
-void ball::set_x(double) {
-    return;
+void ball::set_x(double x) {
+    m_x = x;
 }
 
-void ball::set_y(double) {
-    return;
+void ball::set_y(double y) {
+    m_y = y;
 }
 
 double ball::get_x() {
-    return 3.14;
+    return m_x;
 }
 
 double ball::get_y() {
-    return 2.71;
+    return m_y;
 }
 
 void test_ball()

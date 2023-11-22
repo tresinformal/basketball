@@ -64,5 +64,6 @@ win32{
   LIBS += -lopengl32
   LIBS += -lgdi32
   LIBS += -lwinmm
+  LIBS += -lgcov
 }
 
