@@ -17,7 +17,14 @@ ball game::get_ball() const
   ball b;
   return b;
 }
+bool has_winner(const game& g) {
+    if (g.get_players()[0].get_score() >= 20)
+        return true;
+    if (g.get_players()[1].get_score() >= 20)
+        return true;
+    return false;
 
+}
 void test_game()
 {
   // Here write tests for the game logic
@@ -75,5 +82,6 @@ void test_game()
     get_player_score(g, player_index);
     assert(get_player_score(g, player_index) == score); // Check ourselves
     assert(has_winner(g));
+
   }
 }
