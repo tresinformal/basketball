@@ -5,6 +5,7 @@
 # add files and remove comment when we have headers
 
 SOURCES += \
+	$$PWD/ball.cpp \
 	$$PWD/game.cpp \
 	$$PWD/main.cpp \
 	$$PWD/player.cpp
@@ -14,5 +15,6 @@ SOURCES += \
 # add files and uncomment when we have a resource file
 
 HEADERS += \
+    $$PWD/ball.h \
     $$PWD/game.h \
     $$PWD/player.h
