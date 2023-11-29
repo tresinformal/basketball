@@ -2,7 +2,8 @@
 
 #include <cassert>
 
-game::game()
+game::game(const int& screen_height, const int& screen_width) :
+    m_screen_width{screen_width}, m_screen_height{screen_height}
 {
   players.resize(2);
 }
@@ -18,6 +19,21 @@ ball game::get_ball() const
   return b;
 }
 
+int game::get_screen_width() const {
+  return m_screen_width;
+}
+
+int game::get_screen_height() const {
+  return m_screen_height;
+}
+
+int get_screen_width(const game& g) {
+  return g.get_screen_width();
+}
+
+int get_screen_height(const game& g) {
+  return g.get_screen_height();
+
 bool has_winner(const game& g) {
     return
         g.get_players()[0].get_score() >= 20
@@ -28,13 +44,13 @@ int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
 }
 
-
 void set_player_score(
     game& g,
     const int player_index,
     const int score
 ) {
   g.get_players().at(player_index).set_score(score);
+
 }
 
 void test_game()
@@ -57,13 +73,11 @@ void test_game()
     g.get_ball().get_y();
   }
 
-  //#define FIX_ISSUE_26
-  #ifdef FIX_ISSUE_26
   {
     const game g;
-    get_screen_size(g);
+    get_screen_width(g);
+    get_screen_height(g);
   }
-  #endif // FIX_ISSUE_26
 
   //#define FIX_ISSUE_25
   #ifdef FIX_ISSUE_25
