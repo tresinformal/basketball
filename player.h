@@ -5,7 +5,8 @@
 class player {
 public:
     player();
-    int get_score() const;
+    int get_score() const noexcept;
+    void set_score(const int new_score);
 private:
     int m_score;
 };
