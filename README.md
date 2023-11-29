@@ -27,6 +27,20 @@ The game finishes when on player reaches 20 points.
 The game has one basketball [#14].
 All objects follow the laws of gravity (Newton's Second Law) [#15].
  There is an option to play on one side or two sides.
+There is either one human player and a player controlled by computer or two human players.
+There are two baskets, one in the each half of the yard. 
+The player's clothes should have diffrent colors. 
+The game has a music.
+The player can mute it if she/he wants. 
+The game counts a time. 
+During the game the time shows. 
+The game can be paused. 
+If the player scores from inside the line, she/he gets two points. 
+If the player scores from outside the line she/he gets three points.  
+ 
+
+  
+
 
 [The game finishes when on player reaches 20 points](https://github.com/tresinformal/basketball/issues/23).
 [The game has two players](https://github.com/tresinformal/basketball/issues/11).
