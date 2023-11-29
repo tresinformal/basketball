@@ -41,7 +41,24 @@ The game counts a time.
 During the game the time shows. 
 The game can be paused. 
 If the player scores from inside the line, she/he gets two points. 
-If the player scores from outside the line she/he gets three points.  
+If the player scores from outside the line she/he gets three points.
+If one player throws the ball, the other player can catch it. 
+both players can jump. 
+When the ball is free, the players can run into it and take it. 
+The ball bounces.
+A player can take the ball from another player by running into her/him and pressing a key.
+The key needs to be released to try again. 
+The player can choose if she/he wants to play as a girl or a boy. 
+The player can choose a flag for her/his team. 
+Both players can't choose same flags.
+The scores of both playes are visible on the screen.
+The player can choose the hair color. 
+The player can choose the skin color.
+
+ 
+ 
+ 
+  
  
 
   
