@@ -11,6 +11,7 @@ player::player() :
 int player::get_score() const noexcept {
     return m_score;
 }
+
 void player::set_score(const int new_score) {
     assert(new_score >= 0);
     m_score = new_score;
@@ -25,6 +26,7 @@ void test_player() {
 
     //check player score
     assert(expected_player_score == player_score);
+
     // 41 A player has a position in continuous space
     const double x{player_g.get_x()};
     const double y{player_g.get_y()};
