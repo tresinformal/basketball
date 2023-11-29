@@ -61,7 +61,7 @@ void test_game()
     get_screen_height(g);
   }
 
-  //#define FIX_ISSUE_25
+  #define FIX_ISSUE_25
   #ifdef FIX_ISSUE_25
   {
     const game g;
