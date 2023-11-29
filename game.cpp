@@ -33,6 +33,7 @@ int get_screen_width(const game& g) {
 
 int get_screen_height(const game& g) {
   return g.get_screen_height();
+}
 
 bool has_winner(const game& g) {
     return
@@ -40,6 +41,7 @@ bool has_winner(const game& g) {
      || g.get_players()[1].get_score() >= 20
     ;
 }
+
 int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
 }
