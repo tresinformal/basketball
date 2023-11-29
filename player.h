@@ -6,7 +6,7 @@ class player {
 public:
     player();
 
-    int get_score() const;
+
     double get_x() const noexcept { return m_x; }
     double get_y() const noexcept { return m_y; }
 
