@@ -1,11 +1,23 @@
 #include "player.h"
 #include <cassert>
-player::player(): m_score{0} {
+player::player(): m_score{0}, m_line_x_position{0} {
 
 }
 
 int player::get_score() const {
     return m_score;
+}
+
+void player::set_position(double line_x_position) {
+    m_line_x_position{line_x_position};
+}
+
+void player::score(double line_x_position) {
+    if (m_line_x_position < line_x_position) {
+        m_score += 2;
+    } else {
+        m_score += 3;
+    }
 }
 
 void test_player() {
