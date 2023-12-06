@@ -10,6 +10,9 @@ public:
     double get_y();
     void set_x(double x);
     void set_y(double y);
+private:
+    double m_x;
+    double m_y;
 };
 
 /// Tests the `ball` class

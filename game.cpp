@@ -2,7 +2,8 @@
 
 #include <cassert>
 
-game::game()
+game::game(const int& screen_height, const int& screen_width) :
+    m_screen_width{screen_width}, m_screen_height{screen_height}
 {
   players.resize(2);
 }
@@ -16,6 +17,42 @@ ball game::get_ball() const
 {
   ball b;
   return b;
+}
+
+int game::get_screen_width() const {
+  return m_screen_width;
+}
+
+int game::get_screen_height() const {
+  return m_screen_height;
+}
+
+int get_screen_width(const game& g) {
+  return g.get_screen_width();
+}
+
+int get_screen_height(const game& g) {
+  return g.get_screen_height();
+}
+
+bool has_winner(const game& g) {
+    return
+        g.get_players()[0].get_score() >= 20
+     || g.get_players()[1].get_score() >= 20
+    ;
+}
+
+int get_player_score(const game& g, const int player_index) {
+    return g.get_players().at(player_index).get_score();
+}
+
+void set_player_score(
+    game& g,
+    const int player_index,
+    const int score
+) {
+  g.get_players().at(player_index).set_score(score);
+
 }
 
 void test_game()
@@ -38,13 +75,11 @@ void test_game()
     g.get_ball().get_y();
   }
 
-  //#define FIX_ISSUE_26
-  #ifdef FIX_ISSUE_26
   {
     const game g;
-    get_screen_size(g);
+    get_screen_width(g);
+    get_screen_height(g);
   }
-  #endif // FIX_ISSUE_26
 
   //#define FIX_ISSUE_25
   #ifdef FIX_ISSUE_25
@@ -65,4 +100,16 @@ void test_game()
     assert(is_more_or_less_equal(ball_center_y, 0.0));
   }
   #endif // FIX_ISSUE_25
+  // #23: The game finishes when a player reaches 20 points
+  {
+    game g;
+    const int player_index{0};
+    const int score{20};
+    // Equivalent to g.get_player(player_index).set_score(score);
+    set_player_score(g, player_index, score);
+    get_player_score(g, player_index);
+    assert(get_player_score(g, player_index) == score); // Check ourselves
+    assert(has_winner(g));
+
+  }
 }
