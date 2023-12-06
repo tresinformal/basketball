@@ -28,6 +28,14 @@ int game::get_screen_height() const {
   return m_screen_height;
 }
 
+double game::get_bal_coordinates() {
+  return m_ball.get_x();
+}
+
+void game::tick() {
+  m_ball;
+}
+
 int get_screen_width(const game& g) {
   return g.get_screen_width();
 }
@@ -41,10 +49,6 @@ bool has_winner(const game& g) {
         g.get_players()[0].get_score() >= 20
      || g.get_players()[1].get_score() >= 20
     ;
-}
-
-void tick() {
-
 }
 
 int get_player_score(const game& g, const int player_index) {
@@ -124,7 +128,7 @@ void test_game()
     const game g;
 
     // get coordinates of the ball
-    //const old_coordinates = g.get_bal_coordinates();
+    const old_coordinates = g.get_bal_coordinates();
 
     // (assume the ball is in the air)
     // go to next frame
