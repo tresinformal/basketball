@@ -14,6 +14,7 @@ public:
     ball get_ball() const;
     int get_screen_width() const;
     int get_screen_height() const;
+    void tick();
 
     /// Read-only version of get_players
     const auto& get_players() const noexcept { return players; }

@@ -42,6 +42,10 @@ bool has_winner(const game& g) {
     ;
 }
 
+void tick() {
+    get_ball().set_y(1);
+}
+
 int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
 }
@@ -111,5 +115,24 @@ void test_game()
     assert(get_player_score(g, player_index) == score); // Check ourselves
     assert(has_winner(g));
 
+  }
+
+  // #15: The basketball must follow the laws of gravity
+  {
+    // create a game
+    const game g;
+
+    // get coordinates of the ball
+    const old_coordinates = g.get_bal_coordinates();
+
+    // (assume the ball is in the air)
+    // go to next frame
+    g.tick();
+
+    // get new coordinates of the ball
+    const new_coordinates = g.get_bal_coordinates();
+
+    // the coordinates should differ
+    assert (old_coordinates != new_coordinates);
   }
 }
