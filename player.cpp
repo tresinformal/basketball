@@ -3,8 +3,8 @@
 
 player::player() :
   m_score{0},
-  m_x{0},
-  m_y{0},
+  m_x{0.0},
+  m_y{0.0},
   m_line_x_position{0}
 {
 
