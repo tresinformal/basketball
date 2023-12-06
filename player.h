@@ -11,7 +11,7 @@ public:
     int get_score() const noexcept;
     void set_score(const int new_score);
     void set_position(double line_x_position);
-    void score(double line_x_position);
+    void score(const double line_x_position);
 private:
     int m_score;
     double m_x;
