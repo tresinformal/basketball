@@ -24,7 +24,7 @@ void player::set_position(double line_x_position) {
     m_line_x_position = line_x_position;
 }
 
-void player::score(double line_x_position) {
+void player::score(const double line_x_position) {
     if (m_line_x_position <= line_x_position) {
         m_score += 2;
     } else {
