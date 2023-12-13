@@ -125,7 +125,5 @@ Videos:
 
  * [From design to feature](https://youtu.be/f-rzfZtsPKU)
  * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
-
-
-Mahsa was here again and not Richeal.
+Hello.
 
