@@ -80,4 +80,4 @@ Videos:
  * [From design to feature](https://youtu.be/f-rzfZtsPKU)
  * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
 
-
+Richel was here hahah!
