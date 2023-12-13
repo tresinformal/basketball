@@ -124,6 +124,8 @@ void test_game()
 
   // #15: The basketball must follow the laws of gravity
   {
+    // we have just done some stuff. we still don't know enough about cpp.
+
     // create a game
     const game g;
 
