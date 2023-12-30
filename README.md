@@ -12,6 +12,7 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
  * Date: Weekly, every Wednesday
  * Time: 17:00-19:00 Amsterdam/Stockholm time
  * On Discord, see [FAQ](faq.md)
+ * Considering to join? See the [FAQ](faq.md) too :-)
 
 ## Game design document
 

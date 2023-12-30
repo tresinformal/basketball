@@ -54,7 +54,7 @@ Nope, there is no 'homework': we work only when we can and want to.
 
 ## How to contact the team?
 
- * Send Richel (or any team member) a Discord Friend Request: `richelbilderbeek#9002`
+ * Send Richel (or any team member) a Discord Friend Request: `richelbilderbeek`
  * Send Richel (or any team member) an email: `richel@richelbilderbeek.nl`
  * Create [a GitHub Issue](https://github.com/tresinformal/basketball/issues) and request to become a team member
 
@@ -116,10 +116,10 @@ For a big Issue:
 
  * Postpone the hard work, create simpler and simpler tests, 
    until a test can be fixed by a small Issue.
- * Do push the #IFDEF-ed tests
 
 For a small Issue:
 
+ * Create and work on a branch, which is named after the Issue, for example `issue_314` for Issue 314
  * Write a test that breaks the build
  * Make the test pass
  * Push to GitLab
@@ -167,5 +167,3 @@ After that, you will be removed from the Discord `tresinformal` server
 and your git branch will be deleted.
 
 You will always be welcome to join the team again in the future!
-
-
