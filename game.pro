@@ -21,12 +21,8 @@ CONFIG(release, debug|release) {
   DEFINES += NDEBUG
 }
 CONFIG(debug, debug|release) {
-  # A warning is an error, only in debug mode
-  QMAKE_CXXFLAGS += -Werror
-
-  # gcov
-  QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-  LIBS += -lgcov
+    # A warning is an error, only in debug mode
+    QMAKE_CXXFLAGS += -Werror
 }
 
 # Qt5
@@ -34,7 +30,10 @@ QT += core gui
 
 # GNU/Linux
 unix:!macx {
-  LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+    # gcov
+    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+    LIBS += -lgcov
+    LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
 
 macx {
@@ -62,5 +61,6 @@ win32{
   LIBS += -lopengl32
   LIBS += -lgdi32
   LIBS += -lwinmm
+  LIBS += -lgcov
 }
 
