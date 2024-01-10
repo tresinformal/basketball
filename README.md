@@ -26,7 +26,6 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 > (see Issues what are the criteria for a good Issue)
 
 
-Saw is here!
 
 The game has two players [#13].
 The game finishes when on player reaches 20 points.
@@ -128,3 +127,4 @@ Videos:
  * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
 Hello.
 
+Saw is here!
