@@ -88,7 +88,7 @@ get stuck, start working on the next one) list of what to do:
 
  * [Become a tresinformal team member](https://github.com/tresinformal/basketball/issues/55)
  * [Install Qt Creator and SFML](https://github.com/tresinformal/basketball/issues/55)
- * [Modify README.md on master branch](https://github.com/tresinformal/drakkar/issues/19)
+ * [Modify README.md on main branch](https://github.com/tresinformal/basketball/issues/57)
  * [Make a branch for yourself via the GitHub web interface](https://github.com/tresinformal/drakkar/issues/47)
  * [Modify README.md on your local harddrive on your own branch](https://github.com/tresinformal/drakkar/issues/48)
  * [Add your branch's badges to the README.md](https://github.com/tresinformal/drakkar/issues/87)
