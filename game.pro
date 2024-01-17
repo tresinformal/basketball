@@ -43,10 +43,12 @@ macx {
   INCLUDEPATH += /Users/oscargullberg/SFML/include
   INCLUDEPATH += /Users/meike.latz/SFML/include
   INCLUDEPATH += /Users/theo/SFML/include
+  INCLUDEPATH += /Users/sawsimeon/SFML/include
 
   LIBS += -L/Users/oscargullberg/SFML/lib
   LIBS += -L/Users/meike.latz/SFML/lib
   LIBS += -L/Users/theo/SFML/lib
+  LIBS += -L/Users/sawsimeon/SFML/lib
 }
 
 win32{
