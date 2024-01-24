@@ -37,7 +37,7 @@ There are two baskets, one in the each half of the yard.
 The player's clothes should have diffrent colors. 
 The game has a music.
 The player can mute it if she/he wants. 
-The game counts a time. 
+The game counts a time [#61]. 
 During the game the time shows. 
 The game can be paused. 
 If the player scores from inside the line, she/he gets two points. 
