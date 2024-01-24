@@ -112,4 +112,14 @@ void test_game()
     assert(has_winner(g));
 
   }
+
+
+  {
+      // Create a game
+      // Assert that no time has passed
+      // Make time pass
+      // Assert that time has passed
+
+  }
+
 }
