@@ -113,13 +113,20 @@ void test_game()
 
   }
 
+    // 61: the game counts a time
+    {
+        // Create a game
+        game g;
 
-  {
-      // Create a game
-      // Assert that no time has passed
-      // Make time pass
-      // Assert that time has passed
+        // Assert that no time has passed
+        assert(g.get_time_running() == 0);
 
-  }
+        // Make time pass
+        g.goto_next_frame();
+
+        // Assert that time has passed
+        assert(g.get_time_running() == 1);
+
+    }
 
 }
