@@ -14,7 +14,8 @@ public:
     ball get_ball() const;
     int get_screen_width() const;
     int get_screen_height() const;
-
+    double old_coordinates();
+    double new_coordinates();
     double get_bal_coordinates();
     void tick();
 
