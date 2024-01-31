@@ -1,6 +1,8 @@
 #include "game.h"
 
 #include <cassert>
+#include <stdexcept>
+#include <iostream>
 
 game::game(const int& screen_height, const int& screen_width) :
     m_screen_width{screen_width}, m_screen_height{screen_height}
@@ -35,7 +37,7 @@ void game::tick() {
   if (m_ball != 0) {
     double y = m_ball->get_y();
     if(y < 0) {
-      throw runtime_error("ball is lower than 0!!!");
+        throw std::runtime_error("ball is lower than 0!!!");
     }
 
     if (y < drop_value) {
@@ -130,21 +132,22 @@ void test_game()
     assert(get_player_score(g, player_index) == score); // Check ourselves
     assert(has_winner(g));
 
+
   }
 
   // #15: The basketball must follow the laws of gravity
+
   {
     // we have just done some stuff. we still don't know enough about cpp.
 
     // create a game
-    const game g;
+    game g;
 
     ball b = g.get_ball();
 
     b.set_y(2.5);
-
     // get coordinates of the ball
-    const old_y = b.get_y();
+    const double old_y = b.get_y();
 
 
     // (assume the ball is in the air)
@@ -152,7 +155,10 @@ void test_game()
     g.tick();
 
     // get new coordinates of the ball
-    const new_y = b.get_y();
+    const double new_y = b.get_y();
+
+    std::cout << new_y << std::endl;
+    std::cout << old_y << std::endl;
 
     // the coordinates should differ
     assert(new_y < old_y);
