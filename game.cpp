@@ -112,4 +112,12 @@ void test_game()
     assert(has_winner(g));
 
   }
+  // 62: a game has a ball
+  {
+    game g;
+    ball b;
+    b.set_x(123.456);
+    g.set_ball(b);
+    assert(g.get_ball() == b);
+  }
 }
