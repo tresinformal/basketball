@@ -35,4 +35,10 @@ void test_ball()
     b.set_y(y);
     assert(b.get_y() == y);
   }
+  // 63: Can compare two balls
+  {
+    const ball a;
+    const ball b;
+    assert(a == b);
+  }
 }
