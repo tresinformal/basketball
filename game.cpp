@@ -8,7 +8,7 @@ game::game(const int& screen_height, const int& screen_width) :
     m_screen_width{screen_width}, m_screen_height{screen_height}
 {
   players.resize(2);
-  m_ball = new ball();
+
 }
 
 int game::get_n_players()
@@ -18,8 +18,7 @@ int game::get_n_players()
 
 ball game::get_ball() const
 {
-  ball b;
-  return b;
+  return m_ball;
 }
 
 int game::get_screen_width() const {
@@ -32,20 +31,7 @@ int game::get_screen_height() const {
 
 void game::tick() {
   constexpr double drop_value{1};
-
-  // drop ball
-  if (m_ball != 0) {
-    double y = m_ball->get_y();
-    if(y < 0) {
-        throw std::runtime_error("ball is lower than 0!!!");
-    }
-
-    if (y < drop_value) {
-      m_ball->set_y(0);
-    } else {
-      m_ball->set_y(y-drop_value);
-    }
-  }
+    m_ball.drop(drop_value);
 }
 
 int get_screen_width(const game& g) {
@@ -147,13 +133,12 @@ void test_game()
 
     b.set_y(2.5);
     // get coordinates of the ball
-    const double old_y = b.get_y();
+    double old_y = b.get_y();
 
 
     // (assume the ball is in the air)
     // go to next frame
     g.tick();
-
     // get new coordinates of the ball
     const double new_y = b.get_y();
 

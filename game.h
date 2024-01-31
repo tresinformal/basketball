@@ -26,7 +26,7 @@ private:
     std::vector<player> players;
     int m_screen_width;
     int m_screen_height;
-    ball* m_ball;
+    ball m_ball;
 };
 
 int get_screen_width(const game& g);
