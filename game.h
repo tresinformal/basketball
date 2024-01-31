@@ -15,7 +15,6 @@ public:
     int get_screen_width() const;
     int get_screen_height() const;
 
-    double get_bal_coordinates();
     void tick();
 
     /// Read-only version of get_players

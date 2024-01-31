@@ -28,12 +28,22 @@ int game::get_screen_height() const {
   return m_screen_height;
 }
 
-double game::get_bal_coordinates() {
-  return m_ball.get_x();
-}
-
 void game::tick() {
-  m_ball;
+  constexpr double drop_value{1};
+
+  // drop ball
+  if (m_ball != 0) {
+    double y = m_ball->get_y();
+    if(y < 0) {
+      throw runtime_error("ball is lower than 0!!!");
+    }
+
+    if (y < drop_value) {
+      m_ball->set_y(0);
+    } else {
+      m_ball->set_y(y-drop_value);
+    }
+  }
 }
 
 int get_screen_width(const game& g) {
@@ -129,17 +139,22 @@ void test_game()
     // create a game
     const game g;
 
+    ball b = g.get_ball();
+
+    b.set_y(2.5);
+
     // get coordinates of the ball
-    const old_coordinates = g.get_bal_coordinates();
+    const old_y = b.get_y();
+
 
     // (assume the ball is in the air)
     // go to next frame
-    //g.tick();
+    g.tick();
 
     // get new coordinates of the ball
-    //const new_coordinates = g.get_bal_coordinates();
+    const new_y = b.get_y();
 
     // the coordinates should differ
-    //assert (old_coordinates != new_coordinates);
+    assert(new_y < old_y);
   }
 }
