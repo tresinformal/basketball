@@ -84,6 +84,22 @@ void test_player() {
         assert(p.get_score() == some_score);
     }
 
+    // 68 A player has a hair color
+    {
+        player p;
+        // A player's hair is black by default
+        const color black; // tune the input as needed to get the right color
+        assert(p.get_hair_color() == black);
+
+        // Hair color can be set at construction
+        const color red;
+        p = player(red);
+        assert(p.get_hair_color() == red);
+
+        // Hair color can be set e.g. through options
+        const color white;
+        assert(p.get_hair_color() == white);
+    }
 }
 
 
