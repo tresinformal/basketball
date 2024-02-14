@@ -60,4 +60,22 @@ void test_ball_gravity()
     // b.set_y(b.get_y - 1);
     // for the ball to follow the laws of gravity we need to implement the drop_value
 
+    // issue 65 - The ball bounces
+  // Before solving this test, make sure that solution for issue_15 has been merged here
+  {
+    ball b;
+    const double bounce_speed = 1.0;
+
+    // If the ball is high enough, it simply drops
+    const double initial_y = 1.2; // that is, higher than the drop rate
+    b.set_y(initial_y);
+    b.drop(bounce_speed);
+    const double y_first_bounce = y_high - bounce_speed
+    assert(b.get_y() == y_first_bounce);
+
+    // If the ball would touch the ground, it bounces by the remaining distance
+    b.drop(bounce_speed);
+    const double y_second_bounce = abs(y_first_bounce - bounce_speed);
+    assert(b.get_y == y_second_bounce);
+  }
 }
