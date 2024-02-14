@@ -45,7 +45,7 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 - The ball bounces [#65](https://github.com/tresinformal/basketball/issues/65).
 - A player can take the ball from another player by running into her/him and pressing a key.
 - The key needs to be released to try again. 
-- The player can choose if she/he wants to play as a girl or a boy. 
+- The player can choose if she/he wants to play as a girl or a boy [#67](https://github.com/tresinformal/basketball/issues/67). 
 - The player can choose a flag for her/his team. 
 - Both players can't choose the same flag.
 - The scores of both playes are visible on the screen.
