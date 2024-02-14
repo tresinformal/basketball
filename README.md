@@ -49,7 +49,7 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 - The player can choose a flag for her/his team. 
 - Both players can't choose the same flag.
 - The scores of both playes are visible on the screen.
-- The player can choose the hair color. 
+- The player can choose the hair color [#68](https://github.com/tresinformal/basketball/issues/68). 
 - The player can choose the skin color.
 - A basketball's center has a coordinate with an x and a y [#30](https://github.com/tresinformal/basketball/issues/30).
 - The (one) ball starts at the top-center of the screen [#25](https://github.com/tresinformal/basketball/issues/25).
