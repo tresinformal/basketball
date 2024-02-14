@@ -1,5 +1,4 @@
 # basketball
-# bla
 Trêsinformal's 2023 team basketball game 
 
 Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tresinformal/basketball/actions)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
@@ -25,57 +24,35 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 > The game designers decide what is in the game design document.
 > (see Issues what are the criteria for a good Issue)
 
-
-
-The game has two players [#13].
-The game finishes when on player reaches 20 points.
-The game has one basketball [#14].
-All objects follow the laws of gravity (Newton's Second Law) [#15].
- There is an option to play on one side or two sides.
-There is either one human player and a player controlled by computer or two human players.
-There are two baskets, one in the each half of the yard. 
-The player's clothes should have diffrent colors. 
-The game has a music.
-The player can mute it if she/he wants. 
-The game counts a time [#61]. 
-During the game the time shows. 
-The game can be paused. 
-If the player scores from inside the line, she/he gets two points. 
-If the player scores from outside the line she/he gets three points.
-If one player throws the ball, the other player can catch it. 
-both players can jump. 
-When the ball is free, the players can run into it and take it. 
-The ball bounces.
-A player can take the ball from another player by running into her/him and pressing a key.
-The key needs to be released to try again. 
-The player can choose if she/he wants to play as a girl or a boy. 
-The player can choose a flag for her/his team. 
-Both players can't choose same flags.
-The scores of both playes are visible on the screen.
-The player can choose the hair color. 
-The player can choose the skin color.
-
- 
- 
- 
-  
- 
-
-  
-
-[The game finishes when on player reaches 20 points](https://github.com/tresinformal/basketball/issues/23).
-
-[The game has two players](https://github.com/tresinformal/basketball/issues/11).
-[The game has one basketball](https://github.com/tresinformal/basketball/issues/14).
-[A basketball's center has a coordinate with an x and a y](https://github.com/tresinformal/basketball/issues/30).
-[The (one) ball starts at the top-center of the screen](https://github.com/tresinformal/basketball/issues/25).
-
-All objects follow the laws of gravity (Newton's Second Law):
-
- * the [basketball](https://github.com/tresinformal/basketball/issues/15)
- * [others]
-
-There is an option to play on one side or two sides.
+- The game has two players [#11](https://github.com/tresinformal/basketball/issues/11).
+- The game finishes when either player reaches 20 points [#20](https://github.com/tresinformal/basketball/issues/23).
+- The game has one basketball [#14](https://github.com/tresinformal/basketball/issues/14).
+- All objects follow the laws of gravity (Newton's Second Law) [#15](https://github.com/tresinformal/basketball/issues/15).
+- There is an option to play on either one side or two sides.
+- There is either one human player and a player controlled by computer or two human players.
+- There are two hoops, one in each half of the yard. 
+- The player's clothes should have different colors. 
+- The game has music.
+- The music can be muted.
+- The game counts a time [#61](https://github.com/tresinformal/basketball/issues/61). 
+- During the game the time shows. 
+- The game can be paused. 
+- If the player scores from inside the line, she/he gets two points. 
+- If the player scores from outside the line she/he gets three points.
+- If one player throws the ball, the other player can catch it. 
+- Both players can jump. 
+- When the ball is free, the players can run into it and take it. 
+- The ball bounces.
+- A player can take the ball from another player by running into her/him and pressing a key.
+- The key needs to be released to try again. 
+- The player can choose if she/he wants to play as a girl or a boy. 
+- The player can choose a flag for her/his team. 
+- Both players can't choose the same flag.
+- The scores of both playes are visible on the screen.
+- The player can choose the hair color. 
+- The player can choose the skin color.
+- A basketball's center has a coordinate with an x and a y [#30](https://github.com/tresinformal/basketball/issues/30).
+- The (one) ball starts at the top-center of the screen [#25](https://github.com/tresinformal/basketball/issues/25).
 
 ## Issues
 
@@ -125,13 +102,3 @@ Videos:
 
  * [From design to feature](https://youtu.be/f-rzfZtsPKU)
  * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
-Hello.
-
-
-
-Saw is here!
-Saw edited in the main computer!
-Oscar was here for beer
-
-Richel was here hahah!
-haha!haha
