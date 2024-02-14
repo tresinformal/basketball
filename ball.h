@@ -10,6 +10,7 @@ public:
     double get_y();
     void set_x(double x);
     void set_y(double y);
+    void drop(double value);
 private:
     double m_x;
     double m_y;

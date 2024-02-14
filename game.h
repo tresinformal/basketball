@@ -14,6 +14,7 @@ public:
     ball get_ball() const;
     int get_screen_width() const;
     int get_screen_height() const;
+    void tick();
 
     /// Read-only version of get_players
     const auto& get_players() const noexcept { return players; }
@@ -25,6 +26,7 @@ private:
     std::vector<player> players;
     int m_screen_width;
     int m_screen_height;
+    ball m_ball;
 };
 
 int get_screen_width(const game& g);

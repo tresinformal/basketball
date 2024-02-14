@@ -1,11 +1,14 @@
 #include "game.h"
 
 #include <cassert>
+#include <stdexcept>
+#include <iostream>
 
 game::game(const int& screen_height, const int& screen_width) :
     m_screen_width{screen_width}, m_screen_height{screen_height}
 {
   players.resize(2);
+
 }
 
 int game::get_n_players()
@@ -15,8 +18,7 @@ int game::get_n_players()
 
 ball game::get_ball() const
 {
-  ball b;
-  return b;
+  return m_ball;
 }
 
 int game::get_screen_width() const {
@@ -25,6 +27,11 @@ int game::get_screen_width() const {
 
 int game::get_screen_height() const {
   return m_screen_height;
+}
+
+void game::tick() {
+  constexpr double drop_value{1};
+    m_ball.drop(drop_value);
 }
 
 int get_screen_width(const game& g) {
@@ -111,5 +118,34 @@ void test_game()
     assert(get_player_score(g, player_index) == score); // Check ourselves
     assert(has_winner(g));
 
+
+  }
+
+  // #15: The basketball must follow the laws of gravity
+
+  {
+    // we have just done some stuff. we still don't know enough about cpp.
+
+    // create a game
+    game g;
+
+    ball b = g.get_ball();
+
+    b.set_y(2.5);
+    // get coordinates of the ball
+    double old_y = b.get_y();
+
+
+    // (assume the ball is in the air)
+    // go to next frame
+    g.tick();
+    // get new coordinates of the ball
+    const double new_y = b.get_y();
+
+    std::cout << new_y << std::endl;
+    std::cout << old_y << std::endl;
+
+    // the coordinates should differ
+    assert(new_y < old_y);
   }
 }
