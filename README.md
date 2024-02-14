@@ -40,7 +40,7 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 - If the player scores from inside the line, she/he gets two points. 
 - If the player scores from outside the line she/he gets three points.
 - If one player throws the ball, the other player can catch it. 
-- Both players can jump. 
+- Both players can jump [#66](https://github.com/tresinformal/basketball/issues/66). 
 - When the ball is free, the players can run into it and take it. 
 - The ball bounces [#65](https://github.com/tresinformal/basketball/issues/65).
 - A player can take the ball from another player by running into her/him and pressing a key.
