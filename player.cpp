@@ -84,6 +84,17 @@ void test_player() {
         assert(p.get_score() == some_score);
     }
 
+    // 67 - A player has a gender
+    {
+        player p; // players are female by default so we don't have to specify every time
+        assert(p.get_gender() == gender::female);
+
+        p = player(gender::male); // but gender can be set at construction
+        assert(p.get_gender() == gender::male);
+
+        p.set_gender(gender::female); // gender can be set e.g. through options
+        assert(p.get_gender() == gender::female);
+    }
 }
 
 
