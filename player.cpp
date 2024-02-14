@@ -84,6 +84,15 @@ void test_player() {
         assert(p.get_score() == some_score);
     }
 
+    // 66 - A player can jump
+    {
+        player p;
+        // A player starts at ground level
+        assert(p.get_y() == 0.0);
+        p.jump();
+        assert(p.get_y() > 0.0);
+    }
+
 }
 
 
