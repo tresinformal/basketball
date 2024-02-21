@@ -30,9 +30,13 @@ QT += core gui
 
 # GNU/Linux
 unix:!macx {
-    # gcov
-    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-    LIBS += -lgcov
+
+    # Cannot do code coverage on a local computer
+    #
+    # This line will be uncommented by GitHub Actions
+    #
+    # QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+    # LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
 
@@ -68,3 +72,8 @@ win32{
   # LIBS += -lgcov
 }
 
+# Cannot show game on GitHub Actions
+#
+# This line will be uncommented by GitHub Actions
+#
+# DEFINES += LOGIC_ONLY

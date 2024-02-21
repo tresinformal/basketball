@@ -21,8 +21,14 @@ jobs:
       - name: Install Codecov
         run: sudo pip install codecov
 
-      - name: Allow measuring codecov
+      - name: Allow measuring codecov 1/2
+        run: sed -i 's/# QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage/QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage/' game.pro
+
+      - name: Allow measuring codecov 2/2
         run: sed -i 's/# LIBS += -lgcov/LIBS += -lgcov/' game.pro
+
+      - name: Allow running with logic only
+        run: sed -i 's/# DEFINES += LOGIC_ONLY/DEFINES += LOGIC_ONLY/' game.pro
 
       - name: qmake
         run: qmake game.pro
