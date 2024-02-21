@@ -1,5 +1,4 @@
 #include "game.h"
-
 #include <cassert>
 
 game::game(const int& screen_height, const int& screen_width) :
@@ -27,6 +26,8 @@ int game::get_screen_height() const {
   return m_screen_height;
 }
 
+
+
 int get_screen_width(const game& g) {
   return g.get_screen_width();
 }
@@ -46,6 +47,13 @@ int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
 }
 
+// 61
+int get_time_running() {
+    return time_running;
+}
+void increment_time() {
+    time_running++;
+}
 void set_player_score(
     game& g,
     const int player_index,
@@ -122,7 +130,7 @@ void test_game()
         assert(g.get_time_running() == 0);
 
         // Make time pass
-        g.goto_next_frame();
+        g.increment_time();
 
         // Assert that time has passed
         assert(g.get_time_running() == 1);
