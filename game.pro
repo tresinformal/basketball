@@ -31,7 +31,7 @@ QT += core gui
 # GNU/Linux
 unix:!macx {
     # gcov
-    QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+    # QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
     # LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
