@@ -2,7 +2,7 @@
 
 void test_color()
 {
-    // #68: colors can be created
+    // #69: colors can be created
     {
       const color red = color::red;
       const color black = color::black;
