@@ -102,3 +102,9 @@ Videos:
 
  * [From design to feature](https://youtu.be/f-rzfZtsPKU)
  * [Splitting up an Issues to smaller Issues](https://youtu.be/mhIBXfxVxIU)
+
+## Screenshots
+
+![State of the game on 21/02/2024](screenshots/20240221.png)
+
+
