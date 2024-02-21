@@ -21,6 +21,9 @@ jobs:
       - name: Install Codecov
         run: sudo pip install codecov
 
+      - name: Allow measuring codecov
+        run: sed -i 's/# LIBS += -lgcov/LIBS += -lgcov/' game.pro
+
       - name: qmake
         run: qmake game.pro
 
