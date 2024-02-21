@@ -4,18 +4,19 @@
 game::game(const int& screen_height, const int& screen_width) :
     m_screen_width{screen_width}, m_screen_height{screen_height}
 {
-  players.resize(2);
+    time_running = 0;
+    players.resize(2);
 }
 
 int game::get_n_players()
 {
-  return players.size();
+    return players.size();
 }
 
 ball game::get_ball() const
 {
-  ball b;
-  return b;
+    ball b;
+    return b;
 }
 
 int game::get_screen_width() const {
@@ -47,13 +48,14 @@ int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
 }
 
-// 61
-int get_time_running() {
+int game::get_time() const {
     return time_running;
 }
-void increment_time() {
+
+void game::increment_time() {
     time_running++;
 }
+
 void set_player_score(
     game& g,
     const int player_index,
@@ -127,13 +129,13 @@ void test_game()
         game g;
 
         // Assert that no time has passed
-        assert(g.get_time_running() == 0);
+        assert(g.get_time() == 0);
 
         // Make time pass
         g.increment_time();
 
         // Assert that time has passed
-        assert(g.get_time_running() == 1);
+        assert(g.get_time() == 1);
 
     }
 

@@ -8,19 +8,22 @@
 
 class game {
 
-public:
+ public:
     game(const int& screen_height = 720, const int& screen_width = 1280);
     int get_n_players();
     ball get_ball() const;
     int get_screen_width() const;
     int get_screen_height() const;
-    int get_time_running() const;
+    int get_time() const;
 
     /// Read-only version of get_players
     const auto& get_players() const noexcept { return players; }
 
     /// Modifyable-players version of get_players
     auto& get_players() noexcept { return players; }
+
+    // Add one to time counter
+    void increment_time();
 
 private:
     std::vector<player> players;
