@@ -9,6 +9,7 @@
 #include "ball.h"
 #include "game.h"
 #include "player.h"
+#include "game_view.h"
 
 void test() {
     // TODO: populate with test functions

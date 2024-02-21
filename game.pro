@@ -32,7 +32,7 @@ QT += core gui
 unix:!macx {
     # gcov
     QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
-    # LIBS += -lgcov
+    LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 }
 
@@ -65,6 +65,6 @@ win32{
   LIBS += -lopengl32
   LIBS += -lgdi32
   LIBS += -lwinmm
-  LIBS += -lgcov
+  # LIBS += -lgcov
 }
 

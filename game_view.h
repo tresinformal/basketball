@@ -20,7 +20,7 @@ public:
     void exec() noexcept;
 
     /// Process one timestep
-    void tick() { m_game.tick(); }
+    //void tick() { m_game.tick(); }
 
     ///Gets a const ref to m_game
     const game& get_game() const noexcept {return m_game; }
