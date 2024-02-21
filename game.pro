@@ -67,10 +67,3 @@ win32{
   LIBS += -lwinmm
   LIBS += -lgcov
 }
-
-HEADERS += \
-  color.h
-
-SOURCES += \
-  color.cpp
-

@@ -6,6 +6,7 @@
 
 SOURCES += \
 	$$PWD/ball.cpp \
+	$$PWD/color.cpp \
 	$$PWD/game.cpp \
 	$$PWD/main.cpp \
 	$$PWD/player.cpp
@@ -16,5 +17,6 @@ SOURCES += \
 
 HEADERS += \
     $$PWD/ball.h \
+    $$PWD/color.h \
     $$PWD/game.h \
     $$PWD/player.h
