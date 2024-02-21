@@ -40,16 +40,16 @@ Branch      |[![GitHub Actions logo](GitHubActions.png)](https://github.com/tres
 - If the player scores from inside the line, she/he gets two points. 
 - If the player scores from outside the line she/he gets three points.
 - If one player throws the ball, the other player can catch it. 
-- Both players can jump. 
+- Both players can jump [#66](https://github.com/tresinformal/basketball/issues/66). 
 - When the ball is free, the players can run into it and take it. 
-- The ball bounces.
+- The ball bounces [#65](https://github.com/tresinformal/basketball/issues/65).
 - A player can take the ball from another player by running into her/him and pressing a key.
 - The key needs to be released to try again. 
-- The player can choose if she/he wants to play as a girl or a boy. 
+- The player can choose if she/he wants to play as a girl or a boy [#67](https://github.com/tresinformal/basketball/issues/67). 
 - The player can choose a flag for her/his team. 
 - Both players can't choose the same flag.
 - The scores of both playes are visible on the screen.
-- The player can choose the hair color. 
+- The player can choose the hair color [#68](https://github.com/tresinformal/basketball/issues/68). 
 - The player can choose the skin color.
 - A basketball's center has a coordinate with an x and a y [#30](https://github.com/tresinformal/basketball/issues/30).
 - The (one) ball starts at the top-center of the screen [#25](https://github.com/tresinformal/basketball/issues/25).
