@@ -68,14 +68,16 @@ void test_ball_gravity()
 
     // If the ball is high enough, it simply drops
     const double initial_y = 1.2; // that is, higher than the drop rate
+    // tried this line to fix the "undeclared use of y_high"
+    const double y_high = initial_y + bounce_speed;
     b.set_y(initial_y);
     b.drop(bounce_speed);
-    const double y_first_bounce = y_high - bounce_speed
+    const double y_first_bounce = y_high - bounce_speed;
     assert(b.get_y() == y_first_bounce);
 
     // If the ball would touch the ground, it bounces by the remaining distance
     b.drop(bounce_speed);
     const double y_second_bounce = abs(y_first_bounce - bounce_speed);
-    assert(b.get_y == y_second_bounce);
+    assert(b.get_y() == y_second_bounce);
   }
 }

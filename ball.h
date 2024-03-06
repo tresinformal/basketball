@@ -11,6 +11,7 @@ public:
     void set_x(double x);
     void set_y(double y);
     void drop(double value);
+    double y_high();
 private:
     double m_x;
     double m_y;
