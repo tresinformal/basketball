@@ -1,22 +1,22 @@
 #include "game.h"
-
 #include <cassert>
 
 game::game(const int& screen_height, const int& screen_width) :
     m_screen_width{screen_width}, m_screen_height{screen_height}
 {
-  players.resize(2);
+    time_running = 0;
+    players.resize(2);
 }
 
 int game::get_n_players()
 {
-  return players.size();
+    return players.size();
 }
 
 ball game::get_ball() const
 {
-  ball b;
-  return b;
+    ball b;
+    return b;
 }
 
 int game::get_screen_width() const {
@@ -26,6 +26,8 @@ int game::get_screen_width() const {
 int game::get_screen_height() const {
   return m_screen_height;
 }
+
+
 
 int get_screen_width(const game& g) {
   return g.get_screen_width();
@@ -44,6 +46,14 @@ bool has_winner(const game& g) {
 
 int get_player_score(const game& g, const int player_index) {
     return g.get_players().at(player_index).get_score();
+}
+
+int game::get_time() const {
+    return time_running;
+}
+
+void game::increment_time() {
+    time_running++;
 }
 
 void set_player_score(
@@ -112,4 +122,22 @@ void test_game()
     assert(has_winner(g));
 
   }
+
+    // 61: the game counts a time
+    {
+        // Create a game
+        game g;
+
+        // Assert that no time has passed
+        assert(g.get_time() == 0);
+
+        // Make time pass
+        g.increment_time();
+
+        // Assert that time has passed
+        assert(g.get_time() == 1);
+
+
+    }
+
 }
