@@ -41,3 +41,6 @@ debug/
 game
 *.gcda
 *.gcno
+
+# unnecessary mac files
+.DC_Store
