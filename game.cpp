@@ -71,8 +71,8 @@ void test_game()
   // #30
   {
     const game g;
-    g.get_ball().get_x();
-    g.get_ball().get_y();
+    assert(g.get_ball().get_x() != 273482);
+    assert(g.get_ball().get_y() != 835493);
   }
 
   {
