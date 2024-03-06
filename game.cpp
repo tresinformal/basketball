@@ -137,6 +137,7 @@ void test_game()
         // Assert that time has passed
         assert(g.get_time() == 1);
 
+
     }
 
 }
