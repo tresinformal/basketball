@@ -5,8 +5,8 @@
 class player {
 public:
     player();
-    double get_x() const noexcept { return m_x; }
-    double get_y() const noexcept { return m_y; }
+    [[nodiscard]] double get_x() const noexcept { return m_x; }
+    [[nodiscard]] double get_y() const noexcept { return m_y; }
 
     int get_score() const noexcept;
     void set_score(const int new_score);

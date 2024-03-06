@@ -106,5 +106,3 @@ Videos:
 ## Screenshots
 
 ![State of the game on 21/02/2024](screenshots/20240221.png)
-
-

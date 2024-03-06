@@ -30,11 +30,11 @@ QT += core gui
 
 # GNU/Linux
 unix:!macx {
-
     # Cannot do code coverage on a local computer
     #
     # This line will be uncommented by GitHub Actions
     #
+    # gcov
     # QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
     # LIBS += -lgcov
     LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
