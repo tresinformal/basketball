@@ -55,7 +55,7 @@ Nope, there is no 'homework': we work only when we can and want to.
 ## How to contact the team?
 
  * Send Richel (or any team member) a Discord Friend Request: `richelbilderbeek`
- * Send Richel (or any team member) an email: `richel@richelbilderbeek.nl`
+ * Send Richel (or any team member) an email: `rjcbilderbeek@gmail.com`
  * Create [a GitHub Issue](https://github.com/tresinformal/basketball/issues) and request to become a team member
 
 ## How is Discord used?
