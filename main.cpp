@@ -9,17 +9,21 @@
 #include "ball.h"
 #include "game.h"
 #include "player.h"
+#include "game_view.h"
 
 void test() {
-    // TODO: populate with test functions
     test_ball();
     test_game();
     test_player();
+    #ifndef LOGIC_ONLY
+    test_game_view();
+    #endif
 }
 
-int main(int argc, char **argv) {
-    // Do something with args to not get a warning
-    const std::vector<std::string> args(argv, argv + argc);
+
+int main() //!OCLINT tests may be long
+{
+
 #ifndef NDEBUG
     assert(0.1 > 0.0); //!OCLINT indeed a constant conditional
     test();
@@ -28,6 +32,14 @@ int main(int argc, char **argv) {
     assert(1 == 2);
 #endif
 
+#ifdef LOGIC_ONLY
+    std::cout << "Compiled with LOGIC_ONLY\n";
+#else
+    // Cannot show game on GitHub Actions
+    game_view v;
+    v.exec();
+#endif
+
     std::cout << "Hello Basketballers!\n";
-        return 0; // Game completed succesfully
+    return 0; // Game completes successfully
 }
